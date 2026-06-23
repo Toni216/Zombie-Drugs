@@ -14,4 +14,7 @@ public class ModItems {
             ITEMS.register("empty_syringe", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BLOOD_SYRINGE =
             ITEMS.register("blood_syringe", () -> new Item(new Item.Properties()));
+    // jeringuillas con efectos >:)
+    public static final RegistryObject<Item> SYRINGE_CLONE =
+            ITEMS.register("syringe_clone", () -> new Item(new Item.Properties()));
 }

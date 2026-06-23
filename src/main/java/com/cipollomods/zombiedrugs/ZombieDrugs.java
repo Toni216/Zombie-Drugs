@@ -1,5 +1,6 @@
 package com.cipollomods.zombiedrugs;
 
+import com.cipollomods.zombiedrugs.init.CreativeTabs;
 import com.cipollomods.zombiedrugs.init.ModItems;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -10,5 +11,6 @@ public class ZombieDrugs {
 
     public ZombieDrugs() {
         ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        CreativeTabs.TABS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 }
