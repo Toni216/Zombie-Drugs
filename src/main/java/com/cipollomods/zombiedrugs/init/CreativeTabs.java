@@ -14,10 +14,16 @@ public class CreativeTabs {
     public static final RegistryObject<CreativeModeTab> ZOMBIEDRUGS_TAB =
             TABS.register("zombiedrugs_tab", () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.zombiedrugs"))
-                    .icon(() -> ModItems.EMPTY_SYRINGE.get().getDefaultInstance())
+                    .icon(() -> ModItems.SYRINGE_VILLAGER.get().getDefaultInstance())
                     .displayItems((params, output) -> {
                         output.accept(ModItems.EMPTY_SYRINGE.get());
                         output.accept(ModItems.BLOOD_SYRINGE.get());
+                        output.accept(ModItems.SYRINGE_CLONE.get());
+                        output.accept(ModItems.SYRINGE_VILLAGER.get());
+                        output.accept(ModItems.SYRINGE_CREEPERZ.get());
+                        output.accept(ModItems.SYRINGE_JUMP.get());
+                        output.accept(ModItems.SYRINGE_SPIN.get());
+                        output.accept(ModItems.SYRINGE_FLIP.get());
                     })
                     .build());
 }

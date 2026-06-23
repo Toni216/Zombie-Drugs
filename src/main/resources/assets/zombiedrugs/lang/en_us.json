@@ -1,5 +1,13 @@
 {
   "item.zombiedrugs.empty_syringe": "Empty Syringe",
   "item.zombiedrugs.blood_syringe": "Blood Syringe",
+
+  "item.zombiedrugs.syringe_clone": "Clone Syringe",
+  "item.zombiedrugs.syringe_villager": "Villager Syringe",
+  "item.zombiedrugs.syringe_creeperz": "Creeperz Syringe",
+  "item.zombiedrugs.syringe_jump": "Jump Syringe",
+  "item.zombiedrugs.syringe_spin": "Spin Syringe",
+  "item.zombiedrugs.syringe_flip": "Flip Syringe",
+
   "itemGroup.zombiedrugs": "Zombie Drugs"
 }

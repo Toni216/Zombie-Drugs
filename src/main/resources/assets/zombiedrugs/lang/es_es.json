@@ -1,5 +1,13 @@
 {
   "item.zombiedrugs.empty_syringe": "Jeringuilla vacía",
   "item.zombiedrugs.blood_syringe": "Jeringuilla con sangre",
+
+  "item.zombiedrugs.syringe_clone": "Jeringuilla de clonación",
+  "item.zombiedrugs.syringe_villager": "Jeringuilla de aldeano",
+  "item.zombiedrugs.syringe_creeperz": "Jeringuilla Creeperz",
+  "item.zombiedrugs.syringe_jump": "Jeringuilla de salto",
+  "item.zombiedrugs.syringe_spin": "Jeringuilla de rotación",
+  "item.zombiedrugs.syringe_flip": "Jeringuilla de voltereta",
+
   "itemGroup.zombiedrugs": "Zombie Drugs"
 }

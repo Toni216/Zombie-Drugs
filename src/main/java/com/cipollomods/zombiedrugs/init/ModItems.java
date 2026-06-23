@@ -11,10 +11,20 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, ZombieDrugs.MOD_ID);
     // jeringuillas vacías y con sangre
     public static final RegistryObject<Item> EMPTY_SYRINGE =
-            ITEMS.register("empty_syringe", () -> new Item(new Item.Properties()));
+            ITEMS.register("empty_syringe", () -> new Item(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> BLOOD_SYRINGE =
-            ITEMS.register("blood_syringe", () -> new Item(new Item.Properties()));
+            ITEMS.register("blood_syringe", () -> new Item(new Item.Properties().stacksTo(16)));
     // jeringuillas con efectos >:)
     public static final RegistryObject<Item> SYRINGE_CLONE =
-            ITEMS.register("syringe_clone", () -> new Item(new Item.Properties()));
+            ITEMS.register("syringe_clone", () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> SYRINGE_VILLAGER =
+            ITEMS.register("syringe_villager", () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> SYRINGE_CREEPERZ =
+            ITEMS.register("syringe_creeperz", () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> SYRINGE_JUMP =
+            ITEMS.register("syringe_jump", () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> SYRINGE_SPIN =
+            ITEMS.register("syringe_spin", () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> SYRINGE_FLIP =
+            ITEMS.register("syringe_flip", () -> new Item(new Item.Properties().stacksTo(16)));
 }
