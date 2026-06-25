@@ -11,6 +11,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+/**
+ *
+ * Todos los items del mod
+ * DeferredRegister para registrarlos y cargarlos bien
+ *
+ */
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ZombieDrugs.MOD_ID);

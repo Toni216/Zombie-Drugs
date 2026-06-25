@@ -7,9 +7,16 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-
 import java.util.List;
 
+/***
+ *
+ * Cuando una entidad viva se muere, comprueba si es un zombie
+ * En caso de que lo sea, comprueba que órgano soltar.
+ *
+ * @see Organ
+ *
+ */
 @Mod.EventBusSubscriber(modid = ZombieDrugs.MOD_ID)
 public class ZombieDrop {
 
@@ -25,13 +32,13 @@ public class ZombieDrop {
         ).forEach(item -> {
             if (item instanceof Organ organ) {
                 if (event.getEntity().level().random.nextFloat() < organ.getDropChance()) {
-                    if (event.getDrops().add(new net.minecraft.world.entity.item.ItemEntity(
+                    event.getDrops().add(new net.minecraft.world.entity.item.ItemEntity(
                             event.getEntity().level(),
                             event.getEntity().getX(),
                             event.getEntity().getY(),
                             event.getEntity().getZ(),
                             new ItemStack(organ)
-                    )));
+                    ));
                 }
             }
         });
