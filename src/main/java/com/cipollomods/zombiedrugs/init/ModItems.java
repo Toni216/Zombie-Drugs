@@ -1,6 +1,7 @@
 package com.cipollomods.zombiedrugs.init;
 
 import com.cipollomods.zombiedrugs.ZombieDrugs;
+import com.cipollomods.zombiedrugs.item.SyringeItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -11,7 +12,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, ZombieDrugs.MOD_ID);
     // jeringuillas vacías y con sangre
     public static final RegistryObject<Item> EMPTY_SYRINGE =
-            ITEMS.register("empty_syringe", () -> new Item(new Item.Properties().stacksTo(16)));
+            ITEMS.register("empty_syringe", () -> new SyringeItem(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> BLOOD_SYRINGE =
             ITEMS.register("blood_syringe", () -> new Item(new Item.Properties().stacksTo(16)));
     // jeringuillas con efectos >:)
