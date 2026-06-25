@@ -18,6 +18,10 @@ public class CreativeTabs {
                     .displayItems((params, output) -> {
                         output.accept(ModItems.EMPTY_SYRINGE.get());
                         output.accept(ModItems.BLOOD_SYRINGE.get());
+                        output.accept(ModItems.ZOMBIE_BRAIN.get());
+                        output.accept(ModItems.ZOMBIE_EYE.get());
+                        output.accept(ModItems.ZOMBIE_HEART.get());
+                        output.accept(ModItems.ZOMBIE_TOOTH.get());
                         output.accept(ModItems.SYRINGE_CLONE.get());
                         output.accept(ModItems.SYRINGE_VILLAGER.get());
                         output.accept(ModItems.SYRINGE_CREEPERZ.get());

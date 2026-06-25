@@ -2,6 +2,10 @@ package com.cipollomods.zombiedrugs.init;
 
 import com.cipollomods.zombiedrugs.ZombieDrugs;
 import com.cipollomods.zombiedrugs.item.SyringeItem;
+import com.cipollomods.zombiedrugs.item.organ.ZombieBrain;
+import com.cipollomods.zombiedrugs.item.organ.ZombieEye;
+import com.cipollomods.zombiedrugs.item.organ.ZombieHeart;
+import com.cipollomods.zombiedrugs.item.organ.ZombieTooth;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -28,4 +32,13 @@ public class ModItems {
             ITEMS.register("syringe_spin", () -> new Item(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> SYRINGE_FLIP =
             ITEMS.register("syringe_flip", () -> new Item(new Item.Properties().stacksTo(16)));
+    // órganos de zombie
+    public static final RegistryObject<Item> ZOMBIE_BRAIN =
+            ITEMS.register("zombie_brain", () -> new ZombieBrain(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> ZOMBIE_EYE =
+            ITEMS.register("zombie_eye", () -> new ZombieEye(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> ZOMBIE_HEART =
+            ITEMS.register("zombie_heart", () -> new ZombieHeart(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> ZOMBIE_TOOTH =
+            ITEMS.register("zombie_tooth", () -> new ZombieTooth(new Item.Properties().stacksTo(64)));
 }

@@ -9,5 +9,10 @@
   "item.zombiedrugs.syringe_spin": "Spin Syringe",
   "item.zombiedrugs.syringe_flip": "Flip Syringe",
 
+  "item.zombiedrugs.zombie_brain": "Zombie Brain",
+  "item.zombiedrugs.zombie_eye": "Zombie Eye",
+  "item.zombiedrugs.zombie_heart": "Zombie Heart",
+  "item.zombiedrugs.zombie_tooth": "Zombie Tooth",
+
   "itemGroup.zombiedrugs": "Zombie Drugs"
 }

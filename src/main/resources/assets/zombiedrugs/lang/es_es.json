@@ -9,5 +9,10 @@
   "item.zombiedrugs.syringe_spin": "Jeringuilla de rotación",
   "item.zombiedrugs.syringe_flip": "Jeringuilla de voltereta",
 
+  "item.zombiedrugs.zombie_brain": "Cerebro de Zombie",
+  "item.zombiedrugs.zombie_eye": "Ojo de Zombie",
+  "item.zombiedrugs.zombie_heart": "Corazón de Zombie",
+  "item.zombiedrugs.zombie_tooth": "Diente Zombie",
+
   "itemGroup.zombiedrugs": "Zombie Drugs"
 }
