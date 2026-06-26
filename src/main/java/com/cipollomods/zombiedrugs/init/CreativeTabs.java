@@ -38,6 +38,8 @@ public class CreativeTabs {
                         output.accept(ModItems.SYRINGE_JUMP.get());
                         output.accept(ModItems.SYRINGE_SPIN.get());
                         output.accept(ModItems.SYRINGE_FLIP.get());
+                        output.accept(ModItems.SYRINGE_BOOST.get());
+                        output.accept(ModItems.SYRINGE_RAGE.get());
                     })
                     .build());
 }

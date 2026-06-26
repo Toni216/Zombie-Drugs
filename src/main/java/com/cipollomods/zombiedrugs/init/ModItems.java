@@ -25,7 +25,7 @@ public class ModItems {
             ITEMS.register("empty_syringe", () -> new SyringeItem(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> BLOOD_SYRINGE =
             ITEMS.register("blood_syringe", () -> new Item(new Item.Properties().stacksTo(16)));
-    // jeringuillas con efectos >:)
+    // jeringuillas con efectos, ahora mismo son los mismos pero a futuro quiero meter otros diseños C:<
     public static final RegistryObject<Item> SYRINGE_CLONE =
             ITEMS.register("syringe_clone", () -> new Item(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> SYRINGE_VILLAGER =
@@ -38,6 +38,10 @@ public class ModItems {
             ITEMS.register("syringe_spin", () -> new Item(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> SYRINGE_FLIP =
             ITEMS.register("syringe_flip", () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> SYRINGE_RAGE =
+            ITEMS.register("syringe_rage", () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> SYRINGE_BOOST =
+            ITEMS.register("syringe_boost", () -> new Item(new Item.Properties().stacksTo(16)));
     // órganos de zombie
     public static final RegistryObject<Item> ZOMBIE_BRAIN =
             ITEMS.register("zombie_brain", () -> new ZombieBrain(new Item.Properties().stacksTo(64)));

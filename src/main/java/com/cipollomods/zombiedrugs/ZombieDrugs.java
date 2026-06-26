@@ -12,5 +12,7 @@ public class ZombieDrugs {
     public ZombieDrugs() {
         ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         CreativeTabs.TABS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(DrugsRecipes::register);
     }
+
 }
