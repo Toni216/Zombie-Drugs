@@ -9,6 +9,8 @@ import net.minecraftforge.registries.RegistryObject;
 
 /**
  * Agrupa los items en una pestaña del creativo
+ *
+ * @author Toni
  */
 public class CreativeTabs {
     public static final DeferredRegister<CreativeModeTab> TABS =
@@ -36,7 +38,7 @@ public class CreativeTabs {
                         output.accept(ModItems.SYRINGE_VILLAGER.get());
                         output.accept(ModItems.SYRINGE_CREEPERZ.get());
                         output.accept(ModItems.SYRINGE_JUMP.get());
-                        output.accept(ModItems.SYRINGE_SPIN.get());
+//          TODO:       output.accept(ModItems.SYRINGE_SPIN.get());
                         output.accept(ModItems.SYRINGE_FLIP.get());
                         output.accept(ModItems.SYRINGE_BOOST.get());
                         output.accept(ModItems.SYRINGE_RAGE.get());

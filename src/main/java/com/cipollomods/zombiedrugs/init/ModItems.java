@@ -2,6 +2,7 @@ package com.cipollomods.zombiedrugs.init;
 
 import com.cipollomods.zombiedrugs.ZombieDrugs;
 import com.cipollomods.zombiedrugs.item.SyringeItem;
+import com.cipollomods.zombiedrugs.item.drug.SyringeJump;
 import com.cipollomods.zombiedrugs.item.organ.ZombieBrain;
 import com.cipollomods.zombiedrugs.item.organ.ZombieEye;
 import com.cipollomods.zombiedrugs.item.organ.ZombieHeart;
@@ -16,6 +17,7 @@ import net.minecraftforge.registries.RegistryObject;
  * Todos los items del mod
  * DeferredRegister para registrarlos y cargarlos bien
  *
+ * @author Toni
  */
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -33,9 +35,9 @@ public class ModItems {
     public static final RegistryObject<Item> SYRINGE_CREEPERZ =
             ITEMS.register("syringe_creeperz", () -> new Item(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> SYRINGE_JUMP =
-            ITEMS.register("syringe_jump", () -> new Item(new Item.Properties().stacksTo(16)));
-    public static final RegistryObject<Item> SYRINGE_SPIN =
-            ITEMS.register("syringe_spin", () -> new Item(new Item.Properties().stacksTo(16)));
+            ITEMS.register("syringe_jump", () -> new SyringeJump(new Item.Properties().stacksTo(16)));
+//    public static final RegistryObject<Item> SYRINGE_SPIN =
+//            ITEMS.register("syringe_spin", () -> new SyringeSpin(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> SYRINGE_FLIP =
             ITEMS.register("syringe_flip", () -> new Item(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> SYRINGE_RAGE =

@@ -15,7 +15,7 @@ import java.util.List;
  * En caso de que lo sea, comprueba que órgano soltar.
  *
  * @see Organ
- *
+ * @author Toni
  */
 @Mod.EventBusSubscriber(modid = ZombieDrugs.MOD_ID)
 public class ZombieDrop {

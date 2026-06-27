@@ -7,6 +7,7 @@ import net.minecraft.world.item.Item;
  * Clase base para todos los órganos del zombie
  * Cada subclase define su propio porcentaje de drop
  *
+ * @author Toni
  */
 public class Organ extends Item {
     private final float dropChance;

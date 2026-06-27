@@ -5,6 +5,12 @@ import com.cipollomods.zombiedrugs.init.ModItems;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
+/***
+ * Clase principal del mod
+ * Donde to' cuadra
+ *
+ * @author Toni
+ */
 @Mod(ZombieDrugs.MOD_ID)
 public class ZombieDrugs {
     public static final String MOD_ID = "zombiedrugs";

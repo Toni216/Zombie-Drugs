@@ -14,6 +14,7 @@ import net.minecraft.world.item.ItemStack;
  * Al hacer click derecho sobre un zombie, la reemplaza
  * por una de sangre e inflinge 1 de daño al zombie.
  *
+ * @author Toni
  */
 public class SyringeItem extends Item {
     public SyringeItem(Properties properties) {

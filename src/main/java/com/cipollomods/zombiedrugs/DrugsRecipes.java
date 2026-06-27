@@ -10,6 +10,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 /***
  * Registro de las recetas de drogas
  * Son en el soporte para pociones
+ *
+ * @author Toni
  */
 public class DrugsRecipes {
 
@@ -39,8 +41,8 @@ public class DrugsRecipes {
                         return ItemStack.EMPTY;
                     if (ingredient.is(ModItems.ZOMBIE_BRAIN.get()))
                         return new ItemStack(ModItems.SYRINGE_CLONE.get());
-                    if (ingredient.is(ModItems.ZOMBIE_EYE.get()))
-                        return new ItemStack(ModItems.SYRINGE_SPIN.get());
+//                  if (ingredient.is(ModItems.ZOMBIE_EYE.get()))
+//                      return new ItemStack(ModItems.SYRINGE_SPIN.get());
                     if (ingredient.is(ModItems.ZOMBIE_HEART.get()))
                         return new ItemStack(ModItems.SYRINGE_BOOST.get());
                     if (ingredient.is(ModItems.ZOMBIE_TOOTH.get()))
