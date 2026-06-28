@@ -1,20 +1,21 @@
 package com.cipollomods.zombiedrugs.item.drug;
 
+import com.cipollomods.zombiedrugs.ZombieEvents;
 import com.cipollomods.zombiedrugs.item.DrugSyringe;
 import net.minecraft.world.entity.monster.Zombie;
 
 /***
- * El zombie pega un buen salto y muere al caer obviamente jaja
+ * El zombie explota cuando está lo suficiente cerca
  *
  * @author Toni
  */
-public class SyringeJump extends DrugSyringe {
-    public SyringeJump(Properties properties) {
+public class SyringeCreeperz extends DrugSyringe {
+    public SyringeCreeperz(Properties properties) {
         super(properties);
     }
 
     @Override
     protected void applyEffect(Zombie zombie) {
-        zombie.setDeltaMovement(zombie.getDeltaMovement().x, 2.5, zombie.getDeltaMovement().z);
+        ZombieEvents.CREEPER_ZOMBIES.put(zombie, 0);
     }
 }

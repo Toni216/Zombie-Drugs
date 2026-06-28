@@ -2,7 +2,7 @@ package com.cipollomods.zombiedrugs.init;
 
 import com.cipollomods.zombiedrugs.ZombieDrugs;
 import com.cipollomods.zombiedrugs.item.SyringeItem;
-import com.cipollomods.zombiedrugs.item.drug.SyringeJump;
+import com.cipollomods.zombiedrugs.item.drug.*;
 import com.cipollomods.zombiedrugs.item.organ.ZombieBrain;
 import com.cipollomods.zombiedrugs.item.organ.ZombieEye;
 import com.cipollomods.zombiedrugs.item.organ.ZombieHeart;
@@ -29,11 +29,11 @@ public class ModItems {
             ITEMS.register("blood_syringe", () -> new Item(new Item.Properties().stacksTo(16)));
     // jeringuillas con efectos, ahora mismo son los mismos pero a futuro quiero meter otros diseños C:<
     public static final RegistryObject<Item> SYRINGE_CLONE =
-            ITEMS.register("syringe_clone", () -> new Item(new Item.Properties().stacksTo(16)));
+            ITEMS.register("syringe_clone", () -> new SyringeClone(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> SYRINGE_VILLAGER =
-            ITEMS.register("syringe_villager", () -> new Item(new Item.Properties().stacksTo(16)));
+            ITEMS.register("syringe_villager", () -> new SyringeVillager(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> SYRINGE_CREEPERZ =
-            ITEMS.register("syringe_creeperz", () -> new Item(new Item.Properties().stacksTo(16)));
+            ITEMS.register("syringe_creeperz", () -> new SyringeCreeperz(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> SYRINGE_JUMP =
             ITEMS.register("syringe_jump", () -> new SyringeJump(new Item.Properties().stacksTo(16)));
 //    public static final RegistryObject<Item> SYRINGE_SPIN =
@@ -41,9 +41,9 @@ public class ModItems {
     public static final RegistryObject<Item> SYRINGE_FLIP =
             ITEMS.register("syringe_flip", () -> new Item(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> SYRINGE_RAGE =
-            ITEMS.register("syringe_rage", () -> new Item(new Item.Properties().stacksTo(16)));
+            ITEMS.register("syringe_rage", () -> new SyringeRage(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> SYRINGE_BOOST =
-            ITEMS.register("syringe_boost", () -> new Item(new Item.Properties().stacksTo(16)));
+            ITEMS.register("syringe_boost", () -> new SyringeBoost(new Item.Properties().stacksTo(16)));
     // órganos de zombie
     public static final RegistryObject<Item> ZOMBIE_BRAIN =
             ITEMS.register("zombie_brain", () -> new ZombieBrain(new Item.Properties().stacksTo(64)));
